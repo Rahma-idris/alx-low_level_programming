@@ -8,7 +8,7 @@ int main(void)
 {
 	char hexa;
 
-	for (hexa ='0'; hexa <= '9'; hexa++)
+	for (hexa = '0'; hexa <= '9'; hexa++)
 	{
 		putchar (hexa);
 	}
