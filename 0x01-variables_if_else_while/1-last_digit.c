@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/** main - To assess a as a remainder
- *
+/**
+ * main - Determine if a is greater than 5, less than 6, or is 0
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n,a;
+	int n, a;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	a = n%10;
-	printf("Last digit of %d is\n", n);
+	a = n % 10;
+	printf("Last digit of %d is", n);
 	if (a > 5)
 	{
 		printf("%d and is greater than 5\n", a);
