@@ -8,9 +8,12 @@ int main(void)
 {
 	char letter = 'a';
 	while (letter <= 'z'; letter++)
-	{if (letter != 'e''q')
+	{if (letter != 'e' && letter != 'q')
 		{
 			putchar (letter);
 		}
-		return(0);
+	letter++
+	}
+	putchar ('\n');
+	return(0);
 }
