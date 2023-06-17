@@ -16,6 +16,6 @@ int main(void)
 	{
 		putchar (hexa);
 	}
-	purchar ('\n');
+	putchar ('\n');
 	return (0);
 }
