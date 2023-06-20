@@ -15,12 +15,10 @@ int main(void)
 			{
 				putchar ((firstNum % 10) + '0');
 				putchar ((secondNum % 10) + '0');
-				if (firstNum == 8 && secondNum == 9)
-					continue;
 				putchar (',');
 				putchar (' ');
 			}
-		putchar('\n');
+			putchar('\n');
 		}
 		return (0);
 }
