@@ -17,3 +17,8 @@ void print_alphabet_x10(void)
 		_putchar ('\n');
 		i++;
 }
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
