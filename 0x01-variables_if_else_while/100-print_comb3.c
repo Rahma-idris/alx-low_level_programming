@@ -2,7 +2,8 @@
 /**
  * main - Print a combination of all digits
  *
- * Return: Always 0 (Success)
+ * Return
+ * : Always 0 (Success)
  */
 int main(void)
 {
@@ -20,5 +21,5 @@ int main(void)
 			putchar (',');
 		}
 		putchar('\n');
-		result(0);
+		return (0);
 }
