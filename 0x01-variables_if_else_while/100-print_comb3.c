@@ -9,16 +9,16 @@ int main(void)
 	int firstNum;
 	int secondNum;
 
-		for (firstNum = 0; firstNum <= 9; firstNum++)
+		for (firstNum = 0; firstNum <= 8; firstNum++)
 		{
-			for (secondNum = firstNum + 1; secondNum <= 10; secondNum++)
+			for (secondNum = firstNum + 1; secondNum <= 9; secondNum++)
 			{
 				putchar ((firstNum % 10) + '0');
 				putchar ((secondNum % 10) + '0');
 				if (firstNum == 8 && secondNum == 9)
 					continue;
 				putchar (',');
-				putchar (',');
+				putchar (' ');
 			}
 		putchar('\n');
 		}
