@@ -1,7 +1,9 @@
 #include "main.h"
+
 /**
- *print_line - To print a straight line
- *
+ *print_line - To print a straight line.
+ *@n: integer to count number of lines.
+ * Return: no return
  */
 void print_line(int n)
 {
@@ -13,5 +15,5 @@ void print_line(int n)
 			n--;
 		}
 	}
-	_putchar ( '\n');
+	_putchar ('\n');
 }
