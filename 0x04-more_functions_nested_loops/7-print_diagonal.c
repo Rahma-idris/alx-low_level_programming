@@ -18,14 +18,7 @@ void print_diagonal(int n)
 	{
 		for (b = 0; b < a; b++)
 		{
-			if (b == 0)
-			{
-				_putchar ('\\');
-			}
-			else
-			{
-				_putchar (' ');
-			}
+			_putchar (' ');
 		}
 		_putchar ('\\');
 		_putchar ('\n');
