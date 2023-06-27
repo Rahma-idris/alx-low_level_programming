@@ -9,10 +9,11 @@ void print_rev(char *s)
 {
 	int i = 0;
 	int l;
+	//i reps string length
 
-	while (*s != 0)
+	while (*s[i] != 0)
 	{
-		l++;
+		i++;
 	}
 	for (l = 0; (l = i - 1); l--)
 	{
