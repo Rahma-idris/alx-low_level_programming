@@ -16,7 +16,6 @@ void print_rev(char *s)
 		i++;
 	}
 	for ((l = i - 1); l >= 0; l--)
-    //l= i -1 because after i is decremented, it represents the iteration amount left
 	{
 		_putchar (s[l]);
 	}
