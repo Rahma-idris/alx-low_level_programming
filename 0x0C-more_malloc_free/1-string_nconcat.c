@@ -7,33 +7,37 @@
  * @s2: second string.
  * @n: amount of bytes.
  *
- * Return: pointer to the allocated memory.
- * if malloc fails, status value is equal to 98.
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s3;
-	unsigned int i, j, k;
+	char *concat;
+	unsigned int len = n, index;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; j < n && s2[j] = '\0'; j++)
-		;
-	s3 = malloc(sizeof(char) * i + j + 1));
-	if (s3 == NULL)
+
+	for (index = 0; s1[index]; index++)
+		len++;
+
+	concat = malloc(sizeof(char) * (len + 1));
+
+	if (concat == NULL)
 		return (NULL);
-	for (k = 0; k < i; k++)
-	{
-		s3[k] = s1[k];
-	}
-	for (k = 0; k < j; k++)
-	{
-		s3[i + k] = s2[k];
-	}
-	s3[i + j] = '\0';
-	return (s3);
+
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
 }
