@@ -1,4 +1,4 @@
-i#include "dog.h"
+#include "dog.h"
 #include <stdio.h>
 /**
  *print_dog - Abfunction that prints struct dog when d > 0
