@@ -1,4 +1,4 @@
-#include "dog.h"
+i#include "dog.h"
 #include <stdio.h>
 /**
  *print_dog - Abfunction that prints struct dog when d > 0
@@ -16,10 +16,7 @@ void print_dog(struct dog *d)
 	else
 		printf("Name: %s\n", d->name);
 
-	if (d->age == NULL)
-		printf("Age: nil\n");
-	else
-		printf("Age: %s\n", d->age);
+	printf("Age: %f\n", d->age);
 
 	if (d->owner == NULL)
 		printf("Owner: nil\n");
