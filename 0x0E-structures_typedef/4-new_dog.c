@@ -1,12 +1,12 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- *string_length - function to find string length
+ *s_len - function to find string length
  *@s: string
  *
  *Return: string length
  */
-int string_length(char *s)
+int s_len(char *s)
 {
 	int i = 0;
 
@@ -55,6 +55,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (nDog == NULL)
 		return (NULL);
+
+	nDog->name = malloc(sizeof(char) * (s_len(name) + 1));
+	if (nDog->name == NULL)
+	{
+		free(nDog);
+		return (NULL);
+	}
+
+	nDog->owner = malloc(sizeof(char) * (s_len(owner) + 1));
+
+	if (nDog->owner == NULL)
+	{
+		free(nDog);
+		return (NULL);
+	}
 
 	_strcpy(name, &(nDog->name);
 	_strcpy(owner, &(nDog->owner);
