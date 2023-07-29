@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void __attribute___((constructor)) prequel(void);
+void __attribute__((constructor)) prequel(void);
 
 /**
  * prequel - a string printed before the main function is executed
