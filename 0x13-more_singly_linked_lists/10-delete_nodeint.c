@@ -7,7 +7,7 @@
  * @index: index of the list where the node is to be deleted
  *
  * Return: On success - 1
- * 	   On failure - -1
+ *	On failure - -1
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -25,7 +25,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(copy);
 		return (1);
 	}
-	for (node = 0; node < (index -1); node++)
+	for (node = 0; node < (index - 1); node++)
 	{
 		if (copy->next == NULL)
 			return (-1);
