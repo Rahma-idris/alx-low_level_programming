@@ -5,8 +5,8 @@
  * @b: pointer to a string of 0's and 1's chars
  *
  * Return: the converted number, or 0 if
-	there is one or more chars in the string b that is not 0 or 1
-	b is NULL
+ * there is one or more chars in the string b that is not 0 or 1
+ * b is NULL
  */
 unsigned int binary_to_uint(const char *b)
 {
