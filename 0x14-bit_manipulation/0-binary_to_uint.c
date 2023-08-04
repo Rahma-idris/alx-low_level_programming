@@ -10,7 +10,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int count = 0;
+	int count = 0;
 	unsigned int two_mul = 1;
 	unsigned int num = 0;
 
