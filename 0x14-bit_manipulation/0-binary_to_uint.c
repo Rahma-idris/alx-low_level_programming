@@ -10,11 +10,11 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int count = 0;
+	unsigned int count = 0;
 	unsigned int two_mul = 1;
 	unsigned int num = 0;
 
-	if (b == '\0')
+	if (b == NULL)
 		return (0);
 
 	while (b[count] != '\0')
