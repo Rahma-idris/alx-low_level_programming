@@ -2,11 +2,11 @@
 
 /**
  * read_textfile - reads a text file and prints it to the POSIX standard output
- * filename: pointer  to the file name
- * letters: number of letters the function should read and print
+ * @filename: pointer  to the file name
+ * @letters: number of letters the function should read and print
  *
- * Return: 0 - if filename is NULL, or function fails. 
- * 	0/w - the actual number of bytes the function can read and print
+ * Return: 0 - if filename is NULL, or function fails.
+ *0/w - the actual number of bytes the function can read and print
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
